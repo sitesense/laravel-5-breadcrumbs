@@ -14,7 +14,7 @@ class BreadcrumbServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/resources/views/partials' => resource_path('views/partials')
+            __DIR__.'/../resources/views/partials' => resource_path('views/partials')
         ], 'viewpartial');
     }
     
