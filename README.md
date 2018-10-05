@@ -16,7 +16,7 @@ The breadcrumbs use the default Bootstrap 4 styling.
 If you wish to change this you can publish and edit the view.
 
 ```shell
-php artisan vendor:publish --provider="Sitesense\Breadcrumb" --tag="viewpartial"
+php artisan vendor:publish --provider="Sitesense\Breadcrumb\BreadcrumbServiceProvider"
 ```
 ## Usage
 
