@@ -15,8 +15,8 @@ class BreadcrumbServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/ViewComposers/' => app_path('Http/ViewComposers')
-        ], 'viewcomposers');
+            __DIR__.'/resources/views/partials' => resource_path('views/partials')
+        ], 'viewpartial');
     }
     
     /**
@@ -31,6 +31,6 @@ class BreadcrumbServiceProvider extends ServiceProvider
     
     public function composeBreadcrumbs()
     {
-        View::composer('partials._breadcrumbs', 'App\Http\ViewComposers\BreadcrumbViewComposer');
+        View::composer('partials._breadcrumbs', 'Sitesense\Http\ViewComposers\BreadcrumbViewComposer');
     }
 }
