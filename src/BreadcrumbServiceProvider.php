@@ -30,6 +30,6 @@ class BreadcrumbServiceProvider extends ServiceProvider
     
     public function composeBreadcrumbs()
     {
-        View::composer('partials._breadcrumbs', 'Sitesense\Http\ViewComposers\BreadcrumbViewComposer');
+        View::composer('partials._breadcrumbs', 'Sitesense\Breadcrumb\Http\ViewComposers\BreadcrumbViewComposer');
     }
 }
