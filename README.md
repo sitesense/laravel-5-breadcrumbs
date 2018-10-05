@@ -12,8 +12,8 @@ Require the package with composer.
 composer require sitesense/breadcrumb
 ```
 
-The breadcrumbs use the default Bootstrap 4 styling.
-If you wish to change this you can publish and edit the view.
+Now you need to publish the partial view file which will save to '/resources/views/partials/_breadcrumbs.blade.php'
+The breadcrumbs use the default Bootstrap 4 styling. If you wish to change this you can edit the view.
 
 ```shell
 php artisan vendor:publish --provider="Sitesense\Breadcrumb\BreadcrumbServiceProvider"
