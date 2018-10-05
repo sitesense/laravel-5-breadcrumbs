@@ -20,4 +20,9 @@ php artisan vendor:publish --provider="Sitesense\Breadcrumb" --tag="view"
 ```
 ## Usage
 
-...
+Place this in your views where you would like the breadcrumbs to appear:
+
+
+```shell
+@include('partials._breadcrumbs')
+```
