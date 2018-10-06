@@ -11,7 +11,7 @@
         </li>
         @foreach($breadcrumbs as $key => $url)
 
-        {{-- Remove '-' from link text and make it Title case --}}
+        {{-- Removes '-' from link text and makes it Title case --}}
         @php $key = title_case(str_replace('-', ' ', $key)) @endphp
 
         @if ($loop->last)
