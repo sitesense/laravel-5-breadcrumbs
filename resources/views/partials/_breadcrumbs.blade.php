@@ -10,13 +10,16 @@
         @endif
         </li>
         @foreach($breadcrumbs as $key => $url)
+
+        {{-- Remove '-' from link text and make it Title case --}}
         @php $key = title_case(str_replace('-', ' ', $key)) @endphp
-        @if (! $loop->last)
-        <li class="breadcrumb-item">
-            <a href="{{ url($url) }}">{{ $key }}</a>
-        @else
+
+        @if ($loop->last)
         <li class="breadcrumb-item active" aria-current="page">
             {{ $key }}
+        @else
+        <li class="breadcrumb-item">
+            <a href="{{ url($url) }}">{{ $key }}</a>
         @endif
         </li>
         @endforeach
