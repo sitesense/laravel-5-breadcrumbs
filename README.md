@@ -1,5 +1,7 @@
 ## Laravel 5 Breadcrumbs
 
+![Breadcrumb Example](https://raw.githubusercontent.com/sitesense/laravel-5-breadcrumbs/master/breadcrumb-example.png)
+
 Simple customizable breadcrumbs for Laravel >= 5.5
 
 Uses your URL segments to automatically create your breadcrumbs with zero configuration.
